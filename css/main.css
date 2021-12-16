@@ -1,9 +1,11 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 /* **********main********** */
 
 #wrap{
   min-width: 320px;
+  max-width: 480px;
+  margin: 0 auto;
 }
 strong{
   color: #333;
@@ -19,6 +21,7 @@ p{
   padding-bottom: 15px;
 }
 header{
+  max-width: 480px;
   background-color: #fff;
   width: 100%;
   height: 50px;
@@ -55,6 +58,7 @@ header .btn_box .open{
 
 /* ********nav******** */
 nav{
+  max-width: 480px;
   background-color: #fff;
   display: block;
   position: fixed;
@@ -422,4 +426,54 @@ footer .f_nav li a{
   width: 40px;
   height: 40px;
   opacity: 0.8;
+}
+
+/* 스크롤바 css */ 
+.scrollbar::-webkit-scrollbar{ 
+  /* 스크롤바 막대 너비 설정 */ 
+ width: 0px; 
+  height: 0;
+} 
+
+/* 스크롤바 막대 설정*/ 
+.scrollbar::-webkit-scrollbar-thumb{ 
+  height: 17%; background-color: rgba(0,0,0,0.5); 
+ border-radius: 10px; } 
+
+/* 스크롤바 뒷 배경 설정*/ 
+.scrollbar::-webkit-scrollbar-track{ 
+ background-color: rgba(0,0,0,0); }
+
+
+ /* 스와이프 */
+ .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
