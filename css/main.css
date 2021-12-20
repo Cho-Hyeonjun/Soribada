@@ -249,15 +249,15 @@ position: relative;}
   white-space: nowrap ;
   overflow-x: scroll;
 }
-.cont04 .list li{
+.cont04 .list .swiper-slide{
   display: inline-block;
   margin-right: 20px;
 }
-.cont04 .list li img{
+.cont04 .list .swiper-slide img{
   width: 100px;
   height: auto;
 }
-.cont04 .list li strong{
+.cont04 .list .swiper-slide strong{
   margin-top: 10px;
 }
 
@@ -279,13 +279,13 @@ position: relative;}
   text-align: center;
   margin-right: 20px;
 }
-.swiper{
+.cont05 .swiper{
   padding: 20px 0;
 }
-.swiper-slide{
+.cont05 .swiper-slide{
   transition: all 0.3s;
 }
-.swiper-slide-active{
+.cont05 .swiper-slide-active{
   transform: scale(1.2);
 }
 .cont05 .artist .img_box{
@@ -384,6 +384,7 @@ footer .f_nav li a{
   transform: translateX(-80%);
   background-color: rgba(3, 122, 226, 0.8);
   border-radius: 30px;
+  z-index: 99;
 }
 /* .player .txt_tox{
   position: absolute;
@@ -433,6 +434,7 @@ footer .f_nav li a{
   bottom: 20px;
   left: 50%;
   transform: translateX(300%);
+  z-index: 99;
 }
 .mymenu img{
   width: 40px;
