@@ -70,8 +70,6 @@ nav{
   scrollbar-width: none;
   -ms-overflow-style: none;
   z-index: 99;
-}
-nav ul{
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
