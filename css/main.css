@@ -270,13 +270,26 @@ position: relative;}
   overflow-x: scroll;
   margin-top: 10px;
 }
-.cont05 .artist li{
+.cont05 .artist strong{
+  font-size: 12px;
+  text-align: center;
+}
+.cont05 .artist .swiper-slid{
   display: inline-block;
   text-align: center;
   margin-right: 20px;
 }
+.swiper{
+  padding: 20px 0;
+}
+.swiper-slide{
+  transition: all 0.3s;
+}
+.swiper-slide-active{
+  transform: scale(1.2);
+}
 .cont05 .artist .img_box{
-  width: 110px;
+  /* width: 110px; */
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 10px;
@@ -284,7 +297,6 @@ position: relative;}
 .cont05 .artist .img_box img{
   width: 100%;
 }
-
 .cont06 .video{
   margin-top: 20px;
 }
@@ -444,36 +456,3 @@ footer .f_nav li a{
 .scrollbar::-webkit-scrollbar-track{ 
  background-color: rgba(0,0,0,0); }
 
-
- /* 스와이프 */
- .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}

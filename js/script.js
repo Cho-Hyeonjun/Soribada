@@ -1,15 +1,15 @@
 $(document).ready(function(){ //START
 
-
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+    slidesPerView: 2.5,
+    spaceBetween: 40,
     centeredSlides: true,
-    spaceBetween: 30,
-    grabCursor: true,
+    loop: true,
+    initialSlide:1,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
   });
-
+  
 }); //END
